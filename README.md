@@ -4,4 +4,3 @@
 
 2. Then I connected Flask to Cassandra, providing with feedback of specific cat's image URL when the users key-in a corresponding URL.
 
-3. 
