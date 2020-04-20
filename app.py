@@ -10,7 +10,7 @@ def hello():
     name = request.args.get("name","World")
     return('<h1>Hello, {}!</h1>'.format(name))
 
-@app.route('/catdata/<title>')
+@app.route('/catdata/<title>')    # Respond with a specific cat name and its picture URL.
 def profile(title):
     rows = session.execute( """Select * From catdata.stats where title = '{}'""".format(title))
 
